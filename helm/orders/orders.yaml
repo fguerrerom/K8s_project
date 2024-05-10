@@ -35,7 +35,7 @@ metadata:
     app.kubernetes.io/managed-by: Helm
   namespace: ecommerce
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: orders
