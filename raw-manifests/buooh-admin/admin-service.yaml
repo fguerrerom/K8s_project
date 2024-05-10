@@ -8,6 +8,6 @@ spec:
     app: admin
   type: LoadBalancer
   ports:
-  - protocol: http
+  - protocol: TCP
     port: 8081
     targetPort: 8080
