@@ -16,11 +16,11 @@ spec:
         workload: buooh
     spec:
       containers:
-        - name: stable-alpine3.18-slim-arm64v8
-          image: "public.ecr.aws/nginx/nginx:stable-alpine3.18-slim-arm64v8"
+        - name: nginx
+          image: "public.ecr.aws/nginx/nginx"
           ports:
           - containerPort: 9091
           resources:
             requests:
               cpu: "1"
-              memory: "10Mi"
+              memory: "64Mi"
