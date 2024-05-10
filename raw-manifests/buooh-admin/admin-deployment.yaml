@@ -19,7 +19,7 @@ spec:
         - name: nginx
           image: "public.ecr.aws/nginx/nginx"
           ports: 
-          - containerPort: 8080
+          - containerPort: 8081
           resources:
             requests:
               cpu: "1"
