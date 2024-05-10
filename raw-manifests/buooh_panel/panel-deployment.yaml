@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: panel
+  namespace: buooh
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: panel
+      workload: buooh
+  template:
+    metadata:
+      labels:
+        app: panel
+        workload: buooh
+    spec:
+      containers:
+        - name: stable-alpine3.18-slim-arm64v8
+          image: "public.ecr.aws/nginx/nginx:stable-alpine3.18-slim-arm64v8"
+          ports:
+          - containerPort: 9092
+          resources:
+            requests:
+              cpu: "1"
+              memory: "10Mi"
