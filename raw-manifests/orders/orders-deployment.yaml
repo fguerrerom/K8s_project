@@ -19,7 +19,7 @@ spec:
         - name: orders-container
           image: "public.ecr.aws/k3d0y0m9/ecommerce/orders:0.0.1"
           ports:
-          - containerPort: 4003
+          - containerPort: 3003
           resources:
             requests:
               cpu: "1"
