@@ -10,6 +10,7 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
 spec:
   rules:
+  - host: ecommerce.com
   - http:
       paths:      
       - backend:
