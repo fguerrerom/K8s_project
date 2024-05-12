@@ -4,6 +4,7 @@ metadata:
   name: alb-ingress
   namespace: ecommerce
 spec:
+  ingressClassName: nginx-example  # Set your desired class name
   rules:
   - host: example.com  # Replace with your desired hostname
   - http:
