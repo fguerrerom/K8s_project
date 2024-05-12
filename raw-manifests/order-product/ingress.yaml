@@ -3,14 +3,9 @@ kind: Ingress
 metadata: 
   name: alb-ingress
   namespace: default
-  annotations: 
-    kubernetes.io/ingress.class: alb  
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
 spec:
   rules:
-  - host: my-app.local  # Replace with your desired hostname
+  - host: example.com  # Replace with your desired hostname
   - http:
       paths:      
       - backend:
