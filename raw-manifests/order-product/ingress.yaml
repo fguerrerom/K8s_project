@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress 
 metadata: 
   name: alb-ingress
-  namespace: default
+  namespace: ecommerce
 spec:
   rules:
   - host: example.com  # Replace with your desired hostname
