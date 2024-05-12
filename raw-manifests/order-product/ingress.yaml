@@ -10,6 +10,7 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
 spec:
   rules:
+  - host: my-app.local  # Replace with your desired hostname
   - http:
       paths:      
       - backend:
