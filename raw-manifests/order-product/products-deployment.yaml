@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: products
-  namespace: ecommerce
+  namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: products
-      workload: ecommerce
+      workload: default
   template:
     metadata:
       labels:
         app: products
-        workload: ecommerce
+        workload: default
     spec:
       containers:
         - name: products-container
